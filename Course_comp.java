@@ -8,17 +8,17 @@ public interface Course_comp
 class lesson implements Course_comp
 {
     String lesson_name;
-    int lesson_duration;
+    String instructorName;
 
-    lesson(String lesson_name, int lesson_duration)
+    lesson(String lesson_name, String lesson_duration)
     {
         this.lesson_name = lesson_name;
-        this.lesson_duration = lesson_duration;
+        this.instructorName = instructorName;
     }
 
     public void showDetails()
     {
-        System.out.println("Lesson Name: " + lesson_name + ", Duration: " + lesson_duration + " mins");
+        System.out.println("Lesson Name: " + lesson_name + ", Instructor: " + instructorName);
     }
 
     
@@ -51,9 +51,9 @@ class CourseModule implements Course_comp
 
 class Sample_course_module{
     public static void main(String[] args) {
-        lesson l1 = new lesson("Introduction to Java", 30);
-        lesson l2 = new lesson("OOP Concepts", 45);
-        lesson l3 = new lesson("Data Structures", 40);
+        lesson l1 = new lesson("Introduction to Java","Bhuski");
+        lesson l2 = new lesson("OOP Concepts", "chutki");
+        lesson l3 = new lesson("Data Structures", "rani indumati");
         ArrayList<lesson> lessons1 = new ArrayList<>();
         lessons1.add(l1);
         lessons1.add(l2);
