@@ -9,19 +9,18 @@ class lesson implements Course_comp
 {
     String lesson_name;
     int lesson_duration;
-    String instructor;  // CONFLICT: Added field in same location
+    String instructor;  
 
-    lesson(String lesson_name, int lesson_duration, String instructor)  // CONFLICT: Changed constructor
+    lesson(String lesson_name, int lesson_duration, String instructor) 
     {
         this.lesson_name = lesson_name;
         this.lesson_duration = lesson_duration;
-        this.instructor = instructor;  // CONFLICT: Added initialization
+        this.instructor = instructor; 
     }
 
     public void showDetails()
     {
-        // CONFLICT: Changed output format in same method
-        System.out.println("Lesson: " + lesson_name + " | Time: " + lesson_duration + " minutes | By: " + instructor);
+        System.out.println("Lesson: " + lesson_name + " | Time: " + lesson_duration + " minutes |taught By: " + instructor);
     }
 }
 
