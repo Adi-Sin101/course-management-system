@@ -68,3 +68,13 @@ class Sample_course_module{
         mainCourse.showDetails();
     }
 }
+
+
+// Output:
+// Module Name: Complete Java Course
+// Module Name: Java Basics
+// Lesson Name: Introduction to Java, Instructor: Bhuski
+// Lesson Name: OOP Concepts, Instructor: chutki
+// Module Name: Advanced Topics
+// Lesson Name: Data Structures, Instructor: rani indumati
+// Process finished with exit code 0
