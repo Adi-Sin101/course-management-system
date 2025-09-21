@@ -18,7 +18,7 @@ class lesson implements Course_comp
 
     public void showDetails()
     {
-        System.out.println("Lesson Name: " + lesson_name + ", Duration: " + lesson_duration + " mins");
+        System.out.println("LESSON - " + lesson_name + " : " + lesson_duration + "min");
     }
 
     
